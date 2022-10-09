@@ -27,9 +27,9 @@ public class BookPojo extends HomePagePojo {
 
 	@FindBy(xpath = "//span[text()='US & CANADA']")
 	private WebElement USAndCanada;
-	
-	@FindBy(xpath="//li[@class='country-list ng-star-inserted']")
-    private List<WebElement> USAndCanadaStates;
+
+	@FindBy(xpath = "//li[@class='country-list ng-star-inserted']")
+	private List<WebElement> USAndCanadaStates;
 
 	@FindBy(xpath = "//span[text()='ALPHABETICALLY']")
 	private WebElement alphabetically;
@@ -43,6 +43,9 @@ public class BookPojo extends HomePagePojo {
 	@FindBy(xpath = "//li[@class='country-list ng-star-inserted']")
 	private List<WebElement> restOfWorldcountries;
 
+	@FindBy(xpath = "//button[@class='full-list-close float-right circle-outline icon-moreoptionsclose']")
+	private WebElement closeAirPortList;
+
 	@FindBy(xpath = "//select[@name='selectTripType']")
 	private WebElement selectTripType;
 
@@ -54,6 +57,9 @@ public class BookPojo extends HomePagePojo {
 
 	@FindBy(xpath = "//span[text()='Add Adults passenger']")
 	private WebElement addAdultsPassenger;
+
+	@FindBy(xpath = "(//div[@class='paxNum'])[1]")
+	private WebElement adultPassengerSize;
 
 	@FindBy(xpath = "//span[text()='Add Young adults passenger']")
 	private WebElement addYoungAdultsPassenger;
@@ -105,7 +111,7 @@ public class BookPojo extends HomePagePojo {
 	public WebElement getUSAndCanada() {
 		return USAndCanada;
 	}
-	
+
 	public List<WebElement> getUSAndCanadaStates() {
 		return USAndCanadaStates;
 	}
@@ -180,6 +186,14 @@ public class BookPojo extends HomePagePojo {
 
 	public WebElement getShowFlexibleDates() {
 		return showFlexibleDates;
+	}
+
+	public WebElement getCloseAirPortList() {
+		return closeAirPortList;
+	}
+
+	public WebElement getAdultPassengerSize() {
+		return adultPassengerSize;
 	}
 
 }

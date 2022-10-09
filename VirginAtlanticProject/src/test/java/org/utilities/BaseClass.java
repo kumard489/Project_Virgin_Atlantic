@@ -611,9 +611,9 @@ public class BaseClass {
 	}
 
 	// 74
-	public static String getCellValueWithDate(String fileName, int sheetIndex, int rowIndex, int cellIndex,
+	public static String getCellValueWithDate(int sheetIndex, int rowIndex, int cellIndex,
 			String dateFrmt) {
-		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Test_Data\\"+ fileName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Test_Date\\Virgin_Atlantic_testcases_v1.xlsx");
 		String data = "";
 		try {
 			fis = new FileInputStream(f);
@@ -739,7 +739,7 @@ public class BaseClass {
 
 	// 78
 	public static String getData(int sheetIndex, int rowIndex, int cellIndex) {
-		String data = getCellValueWithDate("testdata", sheetIndex, rowIndex, cellIndex, "dd-MMMM-yyyy");
+		String data = getCellValueWithDate(sheetIndex, rowIndex, cellIndex, "dd-MMMM-yyyy");
 		return data;
 	}
 
