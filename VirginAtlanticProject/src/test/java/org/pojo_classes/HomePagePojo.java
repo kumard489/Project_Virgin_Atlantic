@@ -131,6 +131,9 @@ public class HomePagePojo extends BaseClass {
 
 	@FindBy(xpath = "//h1[@id='herosubtitle']")
 	private WebElement africaLabel;
+	
+	@FindBy(xpath="//h3[text()='Flights to New York']")
+	private WebElement flightToNewYorkLabel;
 
 	// Getters
 	public WebElement getVigirinAtlantic() {
@@ -292,5 +295,10 @@ public class HomePagePojo extends BaseClass {
 	public WebElement getCookiesHomePage() {
 		return cookiesHomePage;
 	}
+
+	public WebElement getFlightToNewYorkLabel() {
+		return flightToNewYorkLabel;
+	}
+
 
 }

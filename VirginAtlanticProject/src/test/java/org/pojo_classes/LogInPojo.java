@@ -38,6 +38,9 @@ public class LogInPojo extends DestinationsAndOnBoardPojo {
 	@FindBy(xpath = "//h1[@class='px-5 d-flex align-items-end loginHeaderText']")
 	private WebElement logInLabel;
 
+	@FindBy(xpath = "//div[@class='overlayText ng-star-inserted']")
+	private WebElement loginMessage;
+
 	// Getters
 	public WebElement getUserNameTxt() {
 		return userNameTxt;
@@ -73,6 +76,10 @@ public class LogInPojo extends DestinationsAndOnBoardPojo {
 
 	public WebElement getLogInLabel() {
 		return logInLabel;
+	}
+
+	public WebElement getLoginMessage() {
+		return loginMessage;
 	}
 
 }
