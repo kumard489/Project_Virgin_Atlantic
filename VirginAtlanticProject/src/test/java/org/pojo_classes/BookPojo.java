@@ -13,7 +13,7 @@ public class BookPojo extends HomePagePojo {
 	}
 
 	// Setters
-	@FindBy(xpath = "//span[text()='From']")
+	@FindBy(xpath = "//span[text()='From ']")
 	private WebElement from;
 
 	@FindBy(xpath = "//span[text()='To']")
